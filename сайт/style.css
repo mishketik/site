@@ -1,0 +1,176 @@
+/* Сброс стилей */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Основные стили */
+  p, span, li,h1, h2, h3, h4 {
+    cursor: default;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #ffffff;
+  }
+  
+  header {
+    background-image: url("img/фон 1.jpg");
+    background-color: #000000;
+    color: #ffffff;
+    padding: 8px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+  }
+  
+  header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  header h2 {
+    font-size: 24px;
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  main {
+    position: relative;
+    background-color: #2c282c;
+    color: #ffffff;
+    padding-top: 150px;
+  }
+  
+  section {
+    position: relative;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+  }
+  a:hover{
+    color: #999494;
+  }
+  #услуги li{
+    color: #ffffff;
+    position: relative;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  #услуги li:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    font-size: larger;
+  }
+
+  #услуги h3{
+    color: #f5b9b9;
+    font-size: 40px;
+    border-bottom: 2px solid #130f13;
+  }
+
+  #портфолио{
+    background-color: #242424;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  #обо-мне{
+    padding: 5px;
+  }
+
+  /* Портфолио */
+  
+  .портфолио-сетка {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .портфолио-элемент {
+    background-color: #3b3939;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .портфолио-элемент img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .портфолио-элемент audio {
+    width: 100%;
+  }
+  
+  .портфолио-надпись {
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  .портфолио-надпись h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .портфолио-надпись p {
+    font-size: 16px;
+    margin-top: 0;
+  }
+
+  .портфолио-элемент:hover {
+  transition: transform 0.4s ease-in-out;
+  transform: scale(0.95);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Футер */
+  
+  footer {
+    background-image: url("путь/к/фоновому/изображению.jpg");
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
+  header, footer, main {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
